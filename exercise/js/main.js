@@ -16,7 +16,7 @@
  */
 
 function question1() {
-	// your answer here
+	$("P").css("color", "blue")
 }
 
 $("#button1").on('click', question1);
@@ -28,7 +28,8 @@ $("#button1").on('click', question1);
  */
 
 function question2(){
-	// your answer here
+	// your answer
+	$("h2").text("Salman");
 }
 
 $("#button2").on('click', question2);
@@ -42,6 +43,8 @@ $("#button2").on('click', question2);
 
 function question3(){
 	// your answer here
+	let a = $("ol .falseFact").text("True Fact")
+
 }
 
 $("#button3").on('click', question3);
@@ -55,12 +58,21 @@ $("#button3").on('click', question3);
  * When button 4 is clicked, change the background color of the whole page to "pink"
  */
 
+  
+
+$("#button4").on('click', function(){
+$("body").css("background", "pink")
+});
 // your answer here
 
 /**
  * Question 5:
  * When button 5 is clicked, change the color of all h2's to "green"
  */
+$("#button5").on('click', function(){
+	$("h2").css("color", "green")
+	});
+
 
 // your answer here
 
@@ -68,7 +80,9 @@ $("#button3").on('click', question3);
  * Question 6:
  * When button 6 is clicked, change the html content of all "blockquotes" to be "<span>no quote</span>"
  */
-
+$("#button6").on('click', function(){
+	$("blockquote").html("<span>no quote</span>")
+	});
  // your answer here
 
 ///////////////////////////////////////////////////////////////////////////////////////
@@ -79,7 +93,9 @@ $("#button3").on('click', question3);
  * Question 7:
  * When button 7 is clicked, change the text in the header's h1 tag to read "jQuery Ninja"
  */
-
+$("#button7").on('click', function(){
+	$("h1").text("jQuery Ninja")
+	});
  // your answer here
 
 /**
@@ -87,6 +103,9 @@ $("#button3").on('click', question3);
  * Have the following code execute when button 8 is clicked.
  * $(".city").attr("src", "http://lorempixel.com/g/500/400/food");
  */
+$("#button8").on('click', function(){
+	$(".city").attr("src", "http://lorempixel.com/g/500/400/food")
+	});
 
  // your answer here
 
@@ -94,7 +113,10 @@ $("#button3").on('click', question3);
  * Question 9:
  * When button 9 is clicked, select all paragraphs on the page and change the color to blue and font to Georgia.
  */
-
+$("#button9").on('click', function(){
+	$("p").css("font-family", "Georgia");
+	$("p").css("color", "blue");
+	});
 // your answer here
 
 /**
@@ -102,7 +124,9 @@ $("#button3").on('click', question3);
  * When button 10 is clicked, select all paragraphs on the page and change the color to blue and font to Georgia.
  * but with only one jQuery. $("selector").css({attribute: "value", attribute: "value"})
  */
-
-// your answer here
+$("#button10").on('click', function(){
+	$("p").css({"color": "blue", "font-family": "Georgia"})
+	});
+// your answer herevalue
 
 
